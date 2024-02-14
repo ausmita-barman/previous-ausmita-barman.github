@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -18,43 +19,17 @@ main {
     height: 100vh;
 }
 
-/* ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
-}
-
-h1, h3 {
-    color: antiquewhite;
-}
-
-img {
-    width: 250px;
-    border: 5px solid transparent;
-    transition: all .3s linear;
-
-}
-
-a:hover img {
-    border: 5px solid rgb(12, 100, 110);
-    transform: scale(1.05);
-} */
-
 
 ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    list-style: none;
     gap: 60px;
     width: 100%;
-    /* align-items: center; */
     justify-content: center;
 }
 
-ul>li {
+li {
     overflow: hidden;
     width: 280px;
     height: 370px;
@@ -64,12 +39,12 @@ ul>li {
 }
 
 h1, h3 {
-    color: antiquewhite;
+    color: white;
 }
 
 img {
     width: 100%;
-    object-fit: cover;
+    height: auto;
     transition: transform .3s linear;
 }
 
@@ -79,21 +54,4 @@ li:hover {
 
 li:hover img {
     transform: scale(1.05);
-}
-
-
-/* all the styling for friends.html, got.html */
-#question_page {
-    background-image: none;
-}
-
-ol {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    height: 300px;
-    border-radius: 20px;
-    outline: 1px solid rgba(0,0,0,0.2);
 }

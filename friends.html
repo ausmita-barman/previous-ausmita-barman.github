@@ -4,17 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz_styles.css">
+
 </head>
-<body id="question_page">
-    <header></header>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html" class="home_button">HOME</a></li>
+            <li>
+                <h3>Score: <span class="score-element">0</span></h3>
+                <h4>
+                    Questions:
+                    <span class="question-left">0</span> /
+                    <span class="total-question">0</span>
+                </h4>
+            </li>
+        </ul>
+    </header>
     <main>
-        <ol>
-            <li><h2>Hello</h2></li>
-        </ol>
+        <img src="img/friends-header.jpg" class="header_img" alt="">
+        <div class="question">
+            <h2>What year did Friends first premiere?</h2>
+            <ol>
+                <button class="correct">1994</button>
+                <button>1995</button>
+                <button>1998</button>
+                <button>1997</button>
+            </ol>
+            <p class="feedback_message correct_answer">Awesome!! You are correct. 👏</p>
+            <p class="feedback_message wrong_answer">❌ Wrong Answer!!</p>
+        </div>
+        <div class="question">
+            <h2>How many pages were in the letter Rachel wrote to Ross (front and back!)?</h2>
+            <ol>
+                <button>12</button>
+                <button>3</button>
+                <button class="correct">18</button>
+                <button>16</button>
+            </ol>
+            <p class="feedback_message correct_answer">Awesome!! You are correct. 👏</p>
+            <p class="feedback_message wrong_answer">❌ Wrong Answer!!</p>
+        </div>
+        <div class="question">
+            <h2>What is Chandler’s middle name?</h2>
+            <ol>
+                <button>Francis</button>
+                <button class="correct">Muriel</button>
+                <button>Charles</button>
+                <button>Slater</button>
+            </ol>
+            <p class="feedback_message correct_answer">Awesome!! You are correct. 👏</p>
+            <p class="feedback_message wrong_answer">❌ Wrong Answer!!</p>
+        </div>
+        <div class="question">
+            <h2>Which city did Phoebe’s boyfriend, David, move to?</h2>
+            <ol>
+                <button>Pinsk</button>
+                <button>Tulsa</button>
+                <button>Penza</button>
+                <button class="correct">Minsk</button>
+            </ol>
+            <p class="feedback_message correct_answer">Awesome!! You are correct. 👏</p>
+            <p class="feedback_message wrong_answer">❌ Wrong Answer!!</p>
+        </div>
+        <div class="question">
+            <h2>How many sisters does Joey have?</h2>
+            <ol>
+                <button class="correct">7</button>
+                <button>3</button>
+                <button>9</button>
+                <button>5</button>
+            </ol>
+            <p class="feedback_message correct_answer">Awesome!! You are correct. 👏</p>
+            <p class="feedback_message wrong_answer">❌ Wrong Answer!!</p>
+        </div>
     </main>
     <footer>
-
+        <a href="" onclick="playAgain()" class="play_again">Play Again</a>
     </footer>
+    <script src="quiz_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/canvas-confetti.umd.min.js"></script>
 </body>
 </html>
